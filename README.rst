@@ -15,7 +15,10 @@ Quickstart
 
 Install grappelli-side-menu::
 
-    pip install grappelli-side-menu
+    git clone https://github.com/davideuler/grappelli-side-menu
+    cd grappelli-side-menu
+    python setup.py sdist --formats=gztar,zip
+    pip install dist/*.tar.gz
 
 Add "grappelli_menu" to your INSTALLED_APPS setting like this::
 
